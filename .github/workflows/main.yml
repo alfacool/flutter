@@ -34,4 +34,4 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: web-build
-          path: build/web
+          path: ./flutter_app/build/web
