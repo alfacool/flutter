@@ -30,6 +30,11 @@ jobs:
       - run: flutter pub get
       - run: flutter config --enable-web
       - run: flutter build web
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          path: ./fluter_app/build/web
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
